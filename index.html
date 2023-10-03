@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Image Editor</h2>
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="image">
+                    <label class="title">change image</label><br>
+                    <input type="file" class="file-input" accept="image/*" hidden>
+                    <button class="choose-img">choose Img</button>
+                        
+                </div>
+                
+                <div class="text">
+                    <label class="text edit">Dynamic text position</label><br>
+                    <label>Top <input type="radio" name="position" value="Top" id="topRadio"></label>
+                    <label>Bottom <input type="radio" name="position" value="Bottom" id="bottomRadio"></label>   
+                </div>
+    
+                <div class="content">
+                        <label >Dynamic content edit</label><br>
+                        <textarea name="" id="content" cols="40" rows="10">Hello @John, see you on the inside!</textarea>     
+                </div>    
+            </div>
+        
+            <div class="preview-img">
+                <img  alt="preview-img">
+                <div id="output"></div>
+                
+            </div>
+               
+        </div>
+        <div class="controls">
+            <button class="save-img">Save</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

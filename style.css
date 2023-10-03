@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+.container{
+    background-color: #fff;
+    width: 700px;
+    border-radius: 10px;
+    padding: 30px 35px 35px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+}
+.container h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+.container .wrapper {
+    display: flex;
+    margin: 20px 0;
+    min-height: 335px;
+
+}
+.wrapper .editor-panel{
+    width: 300px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+.editor-panel .image button{
+    color: #fff;
+    background-color: rgb(103, 109, 107);
+}
+.wrapper .preview-img{
+    margin-left: 20px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preview-img img{
+    max-width: 800px;
+    max-height: 400px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border: 1px solid #ccc;
+}
+
+
+.controls button{
+    font-size: 14px;
+    padding: 11px 20px;
+    border-radius: 3px;
+    background-color: blue;
+    color: #fff;
+}
+ 
+#output {
+    
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: absolute;
+    background-color: azure;
+    width: 25%;
+  }
+.top{
+    transform: translateY(-380%);
+}
+.bottom{
+    transform: translateY(380%);
+}
+       
